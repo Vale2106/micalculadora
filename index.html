@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculator">
+        <!-- Título de la calculadora -->
+        <h1>Calculadora</h1>
+        
+        <!-- Pantalla de resultados -->
+        <input type="text" id="display" disabled>
+        
+        <div class="buttons">
+            <!-- Botón para limpiar la pantalla -->
+            <button onclick="clearDisplay()">C</button>
+            <!-- Botón para cambiar el signo -->
+            <button onclick="appendToDisplay('±')">±</button>
+            <!-- Botón para porcentaje -->
+            <button onclick="appendToDisplay('%')">%</button>
+            <!-- Botón de división -->
+            <button onclick="appendToDisplay('/')">÷</button>
+            <!-- Botones numéricos -->
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <!-- Botón de multiplicación -->
+            <button onclick="appendToDisplay('*')">×</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <!-- Botón de resta -->
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <!-- Botón de suma -->
+            <button onclick="appendToDisplay('+')">+</button>
+            <!-- Botones para cero y decimal -->
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <!-- Botón para calcular el resultado -->
+            <button onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <!-- Importa el script de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

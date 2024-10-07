@@ -1,0 +1,60 @@
+/* Estilo general para el cuerpo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Color de fondo de la página */
+}
+
+/* Estilo para la calculadora */
+.calculator {
+    border: 1px solid #ccc; /* Borde de la calculadora */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    background-color: white; /* Color de fondo de la calculadora */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para el título */
+h1 {
+    text-align: center; /* Centra el texto */
+    font-size: 2rem; /* Tamaño de fuente */
+    color: #007bff; /* Color del texto del título */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilo para la pantalla de resultados */
+#display {
+    width: 100%; /* Ancho completo */
+    height: 50px; /* Altura de la pantalla */
+    font-size: 24px; /* Tamaño de fuente */
+    text-align: right; /* Alineación a la derecha */
+    margin-bottom: 10px; /* Margen inferior */
+    padding: 5px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde de la pantalla */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para el contenedor de botones */
+.buttons {
+    display: grid; /* Usar grid para organizar botones */
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas de igual tamaño */
+    gap: 10px; /* Espaciado entre botones */
+}
+
+/* Estilo para los botones */
+button {
+    height: 50px; /* Altura de los botones */
+    font-size: 20px; /* Tamaño de fuente */
+    background-color: #007bff; /* Color de fondo de los botones */
+    color: white; /* Color del texto de los botones */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
